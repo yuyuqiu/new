@@ -1,20 +1,95 @@
+@charset "utf-8";
+/* 首页样式 */
+.headerHome {
+  background: url(../img/index/headerbg.png) center;
+}
+.navHover a:hover {
+  color: #fff !important;;
+}
+.border-bottom {
+  border-color:#5580F7 !important;
+}
+.searchHome {
+  left: 50%;
+  margin-left: -25%;
+  bottom: -2rem;
+  z-index: 1000;
+  box-shadow: 0px 6px 30px 1px #5580F7;
+}
+.searchBotton{
+  bottom: -1px;
+  right: -1px;
+  height: 66px;
+  width: 160px;
+}
+.inputHome{
+  border: none;
+  padding-right: 1rem;
+}
+.colorHome{
+  margin-bottom: 5rem;
+  background-color: #fff !important;
+}
+.sendHome {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.16);
+}
+.mainHome {
+  padding-top: 9rem;
+  background: url(../img/index/mainTop.png) repeat center;
+}
+.dynamicHome{
+  background: url(../img/index/dynamic.png) repeat center;
+}
+.c1{
+  color: #fff;
+  background-color: #5580F7;
+}
+.c2{
+  color: #fff;
+  background: linear-gradient(180deg, #FECE2E 0%, #FAB23C 100%);;
+}
+.c3{
+  color: #fff;
+  background-color: #7377EC;
+}
+.dynamicHome .link-secondary{
+  color: #fff !important;
+}
 .bd-placeholder-img {
-  font-size: 1.125rem;
+  font-size: 1.125rem; 
   text-anchor: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
 }
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
+.homeBroder{
+  border-left: 1px solid #97B1FA;
 }
-.container {
-  max-width: 1200px;
+.wechatHome{
+  font-size: 8px;
 }
-
+.mainM1,
+.mainM2,
+.mainM3{
+  width: 280px;
+  height: 340px;
+  background: url(../img/index/m1.png) center repeat;
+}
+.mainM2{
+  background: url(../img/index/m2.png) center repeat;
+}
+.mainM3{
+  background: url(../img/index/m3.png) center repeat;
+}
 .pricing-header {
   max-width: 700px;
+}
+.loginHome{
+  max-width: 360px;
+  box-shadow: 0px 3px 20px 1px rgba(11, 67, 0, 0.38);
 }

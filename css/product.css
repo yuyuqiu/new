@@ -1,0 +1,23 @@
+@charset "utf-8";
+.productHome {
+  background: url(../img/product/productBg.png) center;
+}
+.navHover a:hover {
+  color: #fff !important;;
+}
+.productHome .border-bottom,
+.productHome .border-end {
+  border-color:#5580F7 !important;
+}
+.productList{
+  bottom: -15rem;
+  left: 50%;
+  transform:translateX(-50%);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 30px 1px rgba(31, 94, 0, 0.16);
+}
+.productMain{
+  padding-top: 15rem;
+  background: url(../img/product/productMain.png) center;
+}

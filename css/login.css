@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* 登录,注册，找回密码样式 */
+html,body{
+  height: 100%;
+}
+.login{
+  align-items: center;
+  padding-bottom: 40px;
+  background:url(../img/login/loginBg.png) center no-repeat;
+}
+.form-signin {
+  width: 100%;
+  max-width: 440px;
+  margin: auto;
+  background-color: #fff;
+}
+.mainLogin{
+  margin-top: 6rem;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.loginButtonBg{
+  border: none;
+  background: linear-gradient(90deg, #91C4FF 0%, #4C76F6 100%);
+}
+.loginImg{
+  left: 16px;
+  top: 12px;
+  z-index: 10000;
+}
+.quickLogin{
+  border-color: #4C76F6 !important;
+}
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  /* margin-bottom: 10px; */
+  border-top-left-radius: 0;
+}

@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* 尾部 */
+.SettledHome{
+  background: url(../img/index/settle.png) repeat center;
+}
+.SettledHome p{
+  color: #fff;
+}
+.dynamicHome .link-secondary{
+  color: #fff !important;
+}
+
+.footer{
+  background-color: #5580F7;
+  color: #fff;
+}
+.footerContext{
+  padding: 0 8rem;
+  border-bottom: 1px solid #97B1FA;
+}
+.tellSize{
+  font-size: 24px;
+}
+.sizeColor {
+  color: #97B1FA;
+}
+.sizeColor:hover {
+  color: #97B1FA;
+}

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>联系我们</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/commonn.css">
+    <link rel="stylesheet" href="./css/contact.css">
+  </head>
+  <body>
+    <!-- 联系我们 -->
+    <div>
+      <!-- 头部 -->
+      <header class="contactBg pr">
+        <div class="container">
+          <div class="d-flex flex-column flex-md-row align-items-center pb-3 py-3">
+            <a href="/" class="d-flex align-items-center text-dark text-decoration-none mt-2">
+              <img src="./img/logo.png">
+            </a>
+            <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto navHover">
+              <a class="me-4 py-2 text-dark text-decoration-none" href="#">首页</a>
+              <a class="me-4 py-2 text-dark text-decoration-none" href="#">产品服务</a>
+              <a class="me-4 py-2 text-dark text-decoration-none" href="#">帮助中心</a>
+              <a class="me-4 py-2 text-dark text-decoration-none" href="#">联系我们</a>
+              <a class="me-4 py-2 text-dark text-decoration-none" href="#">个人中心</a>
+              <a class="py-2 text-dark text-decoration-none" href="#">订单查询/投诉</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- 头部下面 -->
+      <div class="text-center contactBgBottom pt-5">
+        <h3 class="pt-4">[诚邀你的入驻，助你打开成功之门]</h3>
+      </div>
+      <!-- 联系我们内容 -->
+      <main>
+        <div class="container contactMain mb-5">
+          <h4 class="ps-4 my-3 py-3">联系我们</h4>
+          <div class="row text-center px-5">
+            <div class="col-md-3 py-5 rounded-3 bg-white mb-5">
+              <h5 class="mb-4 fs">联系客服</h5>
+              <p class="mb-0">客服QQ</p>
+              <p class="mb-0">929929137</p>
+              <p class="mb-0">工作时间</p>
+              <p class="mb-0">早8:30 - 晚23:00</p>
+            </div>
+            <div class="col-md-3 ms-auto py-5 rounded-3 bg-white mb-5">
+              <h5 class="mb-4 fs">业务咨询</h5>
+              <p class="mb-0">咨询电话</p>
+              <p class="mb-0">0561-2666236</p>
+              <p class="mb-0">工作时间</p>
+              <p class="mb-0">早8:30 - 晚18:00</p>
+            </div>
+            <div class="col-md-3 ms-auto py-5 rounded-3 bg-white mb-5">
+              <h5 class="mb-4 fs">公司地址</h5>
+              <p class="mb-0">淮北市杜集区红星美凯龙A5-315室</p>
+              <p class="mb-0">工作时间</p>
+              <p class="mb-0">早8:30 - 晚18:00</p>
+            </div>
+          </div>
+          <div class="px-5 py-5 rounded-3 bg-white mb-5 text-center mx-4 mb-4">
+            <h5 class="mb-4 fs">公司简介</h5>
+            <p class="px-5">嗨发卡自动发卡平台是淮北野图信息技术有限公司有限公司旗下的一款虚拟数字产品在线交易服务系统，实现买家与商户之间的双向自动交易服务。24小时自动发卡，满50可提现，支持自定义收款方式。</p>
+          </div>
+          <div  id="container"></div>
+        </div>
+      </main>
+    </div>
+    <script src="https://webapi.amap.com/maps?v=1.4.15"></script>
+    <script src="//webapi.amap.com/ui/1.1/main.js?v=1.1.1"></script>
+    <script>
+        //创建地图
+        var map = new AMap.Map('container', {
+            resizeEnable: true, //是否监控地图容器尺寸变化
+            zoom:16, //初始化地图层级
+            center: [116.836403, 33.979752] //初始化地图中心点
+        });
+        AMapUI.loadUI(['overlay/SimpleInfoWindow'], function(SimpleInfoWindow) {
+
+        var marker = new AMap.Marker({
+            map: map,
+            zIndex: 9999999,
+            position: map.getCenter()
+        });
+
+        var infoWindow = new SimpleInfoWindow({
+
+            infoTitle: '<strong>公司地址</strong>',
+            infoBody: '<p class="my-desc">安徽省淮北市杜集区红星美凯龙A5-315室野图信息技术有限公司</p>',
+
+            //基点指向marker的头部位置
+            offset: new AMap.Pixel(0, -31)
+        });
+
+        function openInfoWin() {
+            infoWindow.open(map, marker.getPosition());
+        }
+
+        //marker 点击时打开
+        marker.on(marker, 'click', function() {
+            openInfoWin();
+        });
+        openInfoWin();
+        });
+
+
+
+    </script>
+  </body>
+</html>

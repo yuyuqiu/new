@@ -6,185 +6,248 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>测试</title>
+    <title>首页</title>
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/commonn.css">
+    <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/index.css">
-    <link href="pricing.css" rel="stylesheet">
   </head>
   <body>
-
-<div class="container py-3">
-  <header>
-    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-        <!-- <svg xmlns="./img/logo.png" class="me-2" viewBox="0 0 118 94" role="img"> </svg> -->
-        <img src="./img/logo.png" width="">
-      </a>
-
-      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 text-dark text-decoration-none" href="#">首页</a>
-        <a class="me-3 py-2 text-dark text-decoration-none" href="#">产品服务</a>
-        <a class="me-3 py-2 text-dark text-decoration-none" href="#">帮助中心</a>
-        <a class="me-3 py-2 text-dark text-decoration-none" href="#">联系我们</a>
-        <a class="me-3 py-2 text-dark text-decoration-none" href="#">个人中心</a>
-        <a class="py-2 text-dark text-decoration-none" href="#">订单查询/投诉</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Free</h4>
+    <div>
+      <!-- 头部 -->
+      <header class="headerHome pb-5 pr">
+        <div class="container">
+          <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom py-3">
+            <a href="/" class="d-flex align-items-center text-dark text-decoration-none mt-2">
+              <img src="./img/logo.png">
+            </a>
+            <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto navHover">
+              <a class="me-4 py-2 text-dark text-decoration-none" href="#">首页</a>
+              <a class="me-4 py-2 text-dark text-decoration-none" href="#">产品服务</a>
+              <a class="me-4 py-2 text-dark text-decoration-none" href="#">帮助中心</a>
+              <a class="me-4 py-2 text-dark text-decoration-none" href="#">联系我们</a>
+              <a class="me-4 py-2 text-dark text-decoration-none" href="#">个人中心</a>
+              <a class="py-2 text-dark text-decoration-none" href="#">订单查询/投诉</a>
+            </nav>
           </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>10 users included</li>
-              <li>2 GB of storage</li>
-              <li>Email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+          <div class="row featurette mb-5">
+            <div class="col-md-7 text-left pricing-header p-5 pb-md-4 mx-auto">
+              <img src="./img/index/maxSize.png" class="mb-2">
+              <h5 class="mb-4 pl-1">为&nbsp; 虚&nbsp; 拟&nbsp; 寄&nbsp; 售&nbsp; 量&nbsp; 身&nbsp; 打&nbsp; 造&nbsp; 的&nbsp; 服&nbsp; 务&nbsp; 平&nbsp; 台</h5>
+              <p class="pb-5 pr-5 pt-5 ml-1">嗨发卡-全网最好用的虚拟卡密自动发货平台致力于解决虚拟商品的快捷
+                寄售服务24小时监控订单资金无忧</p>
+              <button type="button" class="btn btn-light btn-lg rounded-pill">快速入驻</button>
+            </div>
+            <div class="col-md-5">
+              <main class="form-signin p-5 rounded-1 m-5 text-center loginHome">
+              <form>
+                <h1 class="h3 mb-4 fw-normal">嗨发卡商户登录</h1>
+                <div class="input-group has-validation mb-3">
+                  <img src="./img/login/user.png" width="16" height="16" class="loginImg pa">
+                  <input type="text" class="form-control rounded-pill ps-5 py-2" placeholder="手机号或邮箱">
+                </div>
+                <div class="input-group has-validation mb-3">
+                  <img src="./img/login/key.png"  width="16" height="16" class="loginImg pa">
+                  <input type="password" class="form-control  rounded-pill ps-5 py-2" placeholder="登录密码">
+                </div>
+            
+                <div class="checkbox mb-3 text-start">
+                  <label>
+                    <input type="checkbox" value="remember-me" class="text-muted"> 我已阅读并接受<span class="fs">《服务协议》</span>
+                  </label>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary mb-3 rounded-pill loginButtonBg" type="submit">用户登录</button>
+                <a class="mt-5 mb-4 pe-3 fs border-end quickLogin" style="cursor: pointer;">快速注册</a>
+                <a class="mt-5 mb-4 ps-3 fs" style="cursor: pointer;">找回密码</a>
+              </form>
+              </main>
+            </div>
+          </div>
+          <!-- search -->
+          <div class="rounded-pill bg-light col-md-6 p-3 pr-5 pa searchHome d-flex">
+            <span class="me-2 mt-2">查询近期订单</span>
+            <img class="me-5 mt-2" src="./img/index/san.png" width="20" height="20">
+            <input class="bg-light col-md-7 inputHome" type="search" placeholder="输入手机号或联系方式查询订单">
+            <button class="btn rounded-pill bg-primary p-3 pa w-200 searchBotton" type="submit">
+              <img src="./img/index/search.png" width="26" height="26">
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-- 寄售服务 -->
+      <div class="colorHome pr">
+        <div class="container mt-5 text-center pb-5">
+          <p class="h1 fs pt-5 pb-4">寄售服务项目</p>
+          <p class="fs">
+            为商家
+            <span class="text-muted">提供安全、便捷、绿色、稳定虚拟商品卡密自动交易服务</span>
+          </p>
+          <p class="fs pb-5">
+            注册成为商家，<span class="text-muted">将卡密托管在平台（</span>软件注册码、游戏账号、虚拟商品卡密
+            <span class="text-muted">等）</span>
+          </p>
+        </div>
+        <!-- 寄售lists -->
+        <div class="pa container sendHome">
+          <div class="row row-cols-1 row-cols-md-4 mt-3 text-center">
+            <div class="card-body pe-5">
+              <img src="./img/index/bank.png" class="mb-2">
+              <p class="fs">
+                企业个人软件充值码/注册码
+              </p>
+            </div>
+            <div class="card-body rounded-3">
+              <img src="./img/index/key.png" class="mb-2">
+              <p class="fs">
+                腾讯/爱奇艺/优酷视频CDK/游戏CDK
+              </p>
+            </div>
+            <div class="card-body rounded-3">
+              <img src="./img/index/list.png" class="mb-2">
+              <p class="fs">
+                电商/优惠券/折扣卷
+              </p>
+            </div>
+            <div class="card-body rounded-3 ps-5">
+              <img src="./img/index/card.png" class="mb-2">
+              <p class="fs">
+                论坛/邀请码/注册码/积分充值卡
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Pro</h4>
+      <!-- 核心优势 -->
+      <main class="mainHome">
+        <div class="container text-center">
+          <p class="h1 fs pt-5 pb-4">核心优势</p>
+          <p class="text-muted pb-4">致力于解决虚拟商品的快捷寄售服务</p>
+          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 ms-5">
+            <div class="col">
+              <div class="card card-cover overflow-hidden text-white me-5 mainM1" >
+                <p class="p-4">采用群集服务器，防御高，故障率低。无论用户身在何处，均能获得流畅安全可靠的体验</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-cover overflow-hidden text-white me-5 mainM2" >
+                <p class="p-4">商户的商品，全部加密处理，专业运维24小时处理，您的账户安全将得到充分的保障</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-cover overflow-hidden text-white me-5 mainM3" >
+                <p class="p-4">专业客服团队，专属客服一对一贴心服务，7*24小时全天候在线为你解答</p>
+              </div>
+            </div>
           </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>20 users included</li>
-              <li>10 GB of storage</li>
-              <li>Priority email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+        </div>
+      </main>
+      <!-- 支付渠道 -->
+      <div class="py-5">
+        <div class="container text-center">
+          <p class="h1 fs pt-5 pb-4">核心优势</p>
+          <p class="text-muted pb-4">商户的商品，全部加密处理，专业运维24小时处理，您的帐户安全将得到充分的保障。</p>
+          <img src="./img/index/all.png" class="py-5 pe-5">
+        </div>
+      </div>
+      <!-- 最新动态 -->
+      <div class="dynamicHome">
+        <div class="container text-center p-5">
+          <p class="h1 fs pt-5 pb-4">最新动态</p>
+          <p class="text-muted pb-4">在这里您将了解到最新行业动态</p>
+          <div class="row row-cols-1 row-cols-md-3 mt-3">
+            <div class="p-0">
+              <div class="p-4 c1 text-center mb-5">新闻动态</div>
+              <ul class="list-unstyled text-small text-start pb-5">
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+              </ul>
+            </div>
+            <div class="p-0">
+              <div class="p-4 c2 text-center mb-5">常见问题</div>
+              <ul class="list-unstyled text-small text-start pb-5">
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+              </ul>
+            </div>
+            <div class="p-0">
+              <div class="p-4 c3 text-center mb-5">通知公告</div>
+              <ul class="list-unstyled text-small text-start pb-5">
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm border-primary">
-          <div class="card-header py-3 text-white bg-primary border-primary">
-            <h4 class="my-0 fw-normal">Enterprise</h4>
+      <!-- 立即入驻 -->
+      <div class="SettledHome text-center p-5">
+        <p class="h1 pt-5 pb-4">为虚拟寄售量身打造的服务平台</p>
+        <p class="pb-4">网站交互简约直观优化购物体验 24小时监控订单资金无忧</p>
+        <button type="button" class="btn btn-light btn-lg rounded-pill mb-5 fs">立即入驻</button>
+      </div>
+      <!-- 尾部 -->
+      <footer class="py-5 footer">
+        <div class="container footerContext">
+          <div class="row">
+            <div class="col-12 col-md text-center me-5">
+              <img class="mb-2" src="./img/index/call.png">
+              <small class="d-block mb-2 ">咨询电话</small>
+              <p class="WSize mb-2 tellSize">15632233556</p>
+              <small class="d-block mb-2 sizeColor">工作时间：8:30 ~ 23:00</small>
+              <button type="button" class="btn btn-light btn-lg rounded-pill mb-5 fs">在线QQ咨询</button>
+            </div>
+            <div class="col-6 col-md py-4">
+              <div class="homeBroder ps-5">
+                <h6 class="mb-4">快速通道</h6>
+                <ul class="list-unstyled text-small">
+                  <li class="mb-3"><a class="link-secondary text-decoration-none sizeColor" href="#">个人中心</a></li>
+                  <li class="mb-3"><a class="link-secondary text-decoration-none sizeColor" href="#">快速开店</a></li>
+                  <li class="mb-3"><a class="link-secondary text-decoration-none sizeColor" href="#">订单查询</a></li>
+                </ul>
+              </div>   
+            </div>
+            <div class="col-6 col-md py-4 ps-5">
+              <h6 class="mb-4">帮助中心</h6>
+              <ul class="list-unstyled text-small">
+                <li class="mb-3"><a class="link-secondary text-decoration-none sizeColor" href="#">最新公告</a></li>
+                <li class="mb-3"><a class="link-secondary text-decoration-none sizeColor" href="#">使用帮助</a></li>
+                <li class="mb-3"><a class="link-secondary text-decoration-none sizeColor" href="#">商家百科</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md py-4 ps-3">
+              <h6 class="mb-4">关于我们</h6>
+              <ul class="list-unstyled text-small">
+                <li class="mb-3"><a class="link-secondary text-decoration-none sizeColor" href="#">联系我们</a></li>
+                <li class="mb-3"><a class="link-secondary text-decoration-none sizeColor" href="#">免责声明</a></li>
+                <li class="mb-3"><a class="link-secondary text-decoration-none sizeColor" href="#">禁售目录</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md py-4 text-center">
+              <p class="mb-1 wechatHome sizeColor">微信公公众号</p>
+              <img src="./img/index/call.png" width="40" height="40" class="mt-2">
+              <p class="mb-1 wechatHome sizeColor">人工客服微信</p>
+              <img src="./img/index/call.png" width="40" height="40" class="mt-2">
+            </div>
           </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included</li>
-              <li>15 GB of storage</li>
-              <li>Phone and email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
-          </div>
-        </div>
-      </div>
+        </div>   
+        <ul class="list-unstyled text-small text-center mt-5">
+          <li class="mb-2 link-secondary text-decoration-none sizeColor">皖ICP备2022003436号-1</li>
+          <li class="mb-2 link-secondary text-decoration-none sizeColor">Copyright © 淮北野图信息技术有限公司</li>
+          <li class="mb-2 link-secondary text-decoration-none sizeColor">All Rights Reserved. 2022 野图信息版权所有</li>
+        </ul>       
+      </footer>
     </div>
-
-    <h2 class="display-6 text-center mb-4">Compare plans</h2>
-
-    <div class="table-responsive">
-      <table class="table text-center">
-        <thead>
-          <tr>
-            <th style="width: 34%;"></th>
-            <th style="width: 22%;">Free</th>
-            <th style="width: 22%;">Pro</th>
-            <th style="width: 22%;">Enterprise</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row" class="text-start">Public</th>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Private</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-          </tr>
-        </tbody>
-
-        <tbody>
-          <tr>
-            <th scope="row" class="text-start">Permissions</th>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Sharing</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Unlimited members</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Extra security</th>
-            <td></td>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </main>
-
-  <footer class="pt-4 my-md-5 pt-md-5 border-top">
-    <div class="row">
-      <div class="col-12 col-md">
-        <img class="mb-2" src="../assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
-        <small class="d-block mb-3 text-muted">&copy; 2017–2021</small>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Features</h5>
-        <ul class="list-unstyled text-small">
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>About</h5>
-        <ul class="list-unstyled text-small">
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-</div>
-
-
-    
   </body>
 </html>

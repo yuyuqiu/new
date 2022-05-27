@@ -1,0 +1,27 @@
+@charset "utf-8";
+.helpBg{
+  height: 360px;
+  background: url(../img/help/helpBg.png) center no-repeat;
+}
+.navHover a:hover {
+  color: #fff !important;;
+}
+.mainHelp .list-group-item{
+  cursor: pointer;
+  border-color:#5580F7;
+}
+.mainHelp  .list-group-item+.list-group-item{
+  border-top-width: 1px;
+}
+.mainHelp  .list-group-item:hover{
+  background-color: #5580F7;
+}
+.action{
+  background-color: #5580F7;
+}
+.column{
+  background-color: #CBD8FC;
+}
+.columnDiv ul{
+  display: none;
+}
