@@ -6,7 +6,7 @@ html,body{
 .login{
   align-items: center;
   padding-bottom: 40px;
-  background:url(../img/login/loginBg.png) center no-repeat;
+  background:url(../img/login/loginBg.png) center repeat;
 }
 .form-signin {
   width: 100%;
@@ -45,3 +45,9 @@ html,body{
   /* margin-bottom: 10px; */
   border-top-left-radius: 0;
 }
+/* 登录为了适应600px以下 */
+@media (max-width: 600px) {
+  .mainLogin{
+    margin-top: 2rem;
+  }
+} 

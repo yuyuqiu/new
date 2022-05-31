@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>订单查询/投诉</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/commonn.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/order.css">
+  </head>
+  <body>
+    <!-- 订单查询/投诉 -->
+    <div>
+      <!-- 头部 -->
+      <header class="contactBg pr">
+        <div class="container">
+          <div class="d-flex flex-column flex-md-row align-items-center pb-3 py-3">
+            <a href="/" class="d-flex align-items-center text-dark text-decoration-none mt-2">
+              <img src="./img/logo.png">
+            </a>
+            <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto navHover">
+              <a class="me-4 py-2 text-dark text-decoration-none" href="#">首页</a>
+              <a class="me-4 py-2 text-dark text-decoration-none" href="#">产品服务</a>
+              <a class="me-4 py-2 text-dark text-decoration-none" href="#">帮助中心</a>
+              <a class="me-4 py-2 text-dark text-decoration-none" href="#">联系我们</a>
+              <a class="me-4 py-2 text-dark text-decoration-none" href="#">个人中心</a>
+              <a class="py-2 text-dark text-decoration-none" href="#">订单查询/投诉</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- 头部下面 -->
+      <div class="text-center orderBgBottom pt-5 pr">
+        <div class="container">
+          <ul class="nav nav-pills pt-5 navOrder mb-3">
+            <li class="nav-item border px-5 py-2 text-body active">
+              订单查询
+            </li>
+            <li class="nav-item border px-5 py-2 text-body">
+              投诉订单
+            </li>
+            <li class="nav-item border px-5 py-2 text-body">
+              投诉查询
+            </li>
+            <!-- <li class="nav-item border px-5 py-2 text-body">
+              免责声明
+            </li> -->
+          </ul>
+           <!-- search -->
+           <div class="rounded-pill bg-light col-md-8 p-3 pr-5 pa searchOrder d-flex">
+            <span class="me-2 mt-2 text-body">查询近期订单</span>
+            <img class="me-5 mt-2" src="./img/index/san.png" width="20" height="20">
+            <input class="bg-light col-md-7 inputHome" type="search" placeholder="输入手机号或联系方式查询订单">
+            <button class="btn rounded-pill bg-primary p-3 pa w-200 searchBotton" type="submit">
+              <img src="./img/index/search.png" width="26" height="26">
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- 订单查询投诉内容 -->
+      <main class="py-5">
+        <div class="container py-5">
+          <p class="text-danger">*免责声明 卖家次日可在嗨发卡-全网最好用的虚拟卡密自动发货平台申请提现，因此如果您对订单存在疑惑，请在当天24.00前嗨发卡-全网最好用的虚拟卡密自动发货
+            平台客服反馈，逾期请自行与卖家协商解决。 </p>
+          <!-- 未查询到数据 -->
+          <div class="text-center py-5 mb-5">
+            <img src="./img/order/warn.png" width="40" height="40" class="mb-2">
+            <p>没有查询到订单信息</p>
+          </div>
+          <!-- 订单查询 -->
+          <div class="orderQuery">
+            <div class="text-end mb-3">
+              <span class="rounded-pill p-1 text-light btn-danger">QQ:3574375</span>
+            </div>
+            <table class="table text-center mb-5 tableOrder rounded-3">
+              <thead class="table-primary">
+                <tr>
+                  <th>订单编号</th>
+                  <th>订单日期</th>
+                  <th>付款方式</th>
+                  <th>订单金额</th>
+                  <th>卡密信息</th>
+                  <th>购买数</th>
+                  <th>
+                    <button type="button" class="btn  btn-primary  rounded-pill me-2 p-1">一键复制卡密</button>
+                    <button type="button" class="btn btn-danger  rounded-pill p-1s">投诉</button>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>t12233333</td>
+                  <td>2022-03-15</td>
+                  <td>微信支付</td>
+                  <td>15</td>
+                  <td>已发货</td>
+                  <td>5</td>
+                  <td>
+                    <button type="button" class="btn  btn-primary  rounded-pill me-2 p-1">一键复制卡密</button>
+                    <button type="button" class="btn btn-danger  rounded-pill p-1s">投诉</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>t12233333</td>
+                  <td>2022-03-15</td>
+                  <td>微信支付</td>
+                  <td>15</td>
+                  <td>已发货</td>
+                  <td>5</td>
+                  <td>
+                    <button type="button" class="btn  btn-primary  rounded-pill me-2 p-1">一键复制卡密</button>
+                    <button type="button" class="btn btn-danger  rounded-pill p-1s">投诉</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- 投诉查询 -->
+          <div class="ordeComplain">
+            <div class="text-end mb-3">
+              <span class="rounded-pill p-1 text-light btn-primary">QQ:3574375</span>
+            </div>
+            <table class="table text-center mb-5 tableOrder rounded-3">
+              <thead class="table-primary">
+                <tr>
+                  <th>订单编号</th>
+                  <th>提交日期</th>
+                  <th>投诉原因</th>
+                  <th>联系方式</th>
+                  <th>补充说明</th>
+                  <th>处理状态</th>
+                  <th>处理结果</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>t12233333</td>
+                  <td>2022-03-15</td>
+                  <td>微信支付</td>
+                  <td>15</td>
+                  <td>已发货</td>
+                  <td>5</td>
+                  <td>已处理</td>
+                </tr>
+                <tr>
+                  <td>t12233333</td>
+                  <td>2022-03-15</td>
+                  <td>微信支付</td>
+                  <td>15</td>
+                  <td>已发货</td>
+                  <td>5</td>
+                  <td class="dealOrder">已处理</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

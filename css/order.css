@@ -1,0 +1,61 @@
+@charset "utf-8";
+.contactBg{
+  background: url(../img/contact/headerBg.png) center repeat;
+}
+.navHover a:hover {
+  color: #fff !important;;
+}
+.orderBgBottom {
+  height: 220px;
+  color: #fff;
+  background: url(../img/order/orderBg.png) center no-repeat;
+}
+.navOrder li{
+  background: rgba(255, 255, 255, 0.48);
+  border-color: #5580F7 !important;
+  cursor: pointer;
+}
+.navOrder li:hover{
+  background-color: #5580F7;
+}
+.navOrder .active {
+  background-color: #5580F7;
+}
+.searchOrder{
+  bottom: -2rem;
+  z-index: 1000;
+  box-shadow: 0px 6px 30px 1px #5580F7;
+}
+.tableOrder button{
+  font-size: 14px;
+}
+.tableOrder tr,
+.tableOrder{
+  border: 1px solid #5580F7;
+}
+.tableOrder tr>td{
+  vertical-align: middle;
+}
+.table>:not(:first-child) {
+  border-top: none; 
+}
+.dealOrder{
+  color: #00AE4B;
+}
+@media (max-width: 500px){
+  .searchOrder {
+    padding:14px !important;
+  }
+  .searchBotton {
+    bottom: 0px;
+    right: 0px;
+    height: 62px;
+    width: 100px;
+  }
+  .searchOrder ,.searchOrder .rounded-pill{
+    border-radius: 0 !important;
+  }
+  .searchOrder .me-5{
+    margin-right: 0 !important;
+  }
+}

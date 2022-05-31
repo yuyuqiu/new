@@ -1,6 +1,6 @@
 @charset "utf-8";
 .contactBg{
-  background: url(../img/contact/headerBg.png) center no-repeat;
+  background: url(../img/contact/headerBg.png) center repeat;
 }
 .navHover a:hover {
   color: #fff !important;;

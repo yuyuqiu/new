@@ -27,3 +27,15 @@
 .sizeColor:hover {
   color: #97B1FA;
 }
+/* 自适应 大于300px小于1050px的页面 */
+@media (max-width: 1050px) and (min-width: 300px) {
+  .footerContext{
+    padding: 0 6rem;
+  }
+  .footer .ps-5 {
+    padding-left: 0 !important;
+  }
+  .footer .col-6{
+    text-align: center;
+  }
+} 
